@@ -1,9 +1,9 @@
 <?php
 
+use App\Entity\Post;
 use App\Kernel;
 use Symfony\Component\ErrorHandler\Debug;
 use Symfony\Component\HttpFoundation\Request;
-
 require dirname(__DIR__).'/config/bootstrap.php';
 
 if ($_SERVER['APP_DEBUG']) {
@@ -22,6 +22,9 @@ if ($trustedHosts = $_SERVER['TRUSTED_HOSTS'] ?? false) {
 
 $kernel = new Kernel($_SERVER['APP_ENV'], (bool) $_SERVER['APP_DEBUG']);
 $request = Request::createFromGlobals();
+
+$request->attributes->set('post' , new Post);
+
 $response = $kernel->handle($request);
 $response->send();
 $kernel->terminate($request, $response);

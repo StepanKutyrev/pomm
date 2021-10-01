@@ -1,12 +1,112 @@
 {
+    "cakephp/cache": {
+        "version": "4.2.9"
+    },
+    "cakephp/collection": {
+        "version": "4.2.9"
+    },
+    "cakephp/core": {
+        "version": "4.2.9"
+    },
+    "cakephp/database": {
+        "version": "4.2.9"
+    },
+    "cakephp/datasource": {
+        "version": "4.2.9"
+    },
+    "cakephp/event": {
+        "version": "4.2.9"
+    },
+    "cakephp/migrations": {
+        "version": "3.1.0"
+    },
+    "cakephp/orm": {
+        "version": "4.2.9"
+    },
+    "cakephp/utility": {
+        "version": "4.2.9"
+    },
+    "cakephp/validation": {
+        "version": "4.2.9"
+    },
+    "doctrine/annotations": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "a2759dd6123694c8d901d0ec80006e044c2e6457"
+        },
+        "files": [
+            "config/routes/annotations.yaml"
+        ]
+    },
+    "doctrine/inflector": {
+        "version": "2.0.3"
+    },
+    "doctrine/lexer": {
+        "version": "1.2.1"
+    },
+    "jdorn/sql-formatter": {
+        "version": "v1.2.17"
+    },
+    "nikic/php-parser": {
+        "version": "v4.13.0"
+    },
+    "pomm-project/cli": {
+        "version": "2.0.3"
+    },
+    "pomm-project/foundation": {
+        "version": "2.0.5"
+    },
+    "pomm-project/model-manager": {
+        "version": "2.0.2"
+    },
+    "pomm-project/pomm-bundle": {
+        "version": "2.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "2.3",
+            "ref": "7f10aab539e8268582d10713e4712e59726a7b48"
+        },
+        "files": [
+            "config/packages/pomm.yaml",
+            "config/routes/dev/pomm.yaml"
+        ]
+    },
+    "pomm-project/pomm-symfony-bridge": {
+        "version": "3.0.0"
+    },
     "psr/cache": {
         "version": "1.0.1"
     },
     "psr/container": {
         "version": "1.1.1"
     },
+    "psr/http-message": {
+        "version": "1.0.1"
+    },
     "psr/log": {
         "version": "1.1.4"
+    },
+    "psr/simple-cache": {
+        "version": "1.0.1"
+    },
+    "robmorgan/phinx": {
+        "version": "0.12.8"
+    },
+    "sensio/framework-extra-bundle": {
+        "version": "5.2",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "5.2",
+            "ref": "fb7e19da7f013d0d422fa9bce16f5c510e27609b"
+        },
+        "files": [
+            "config/packages/sensio_framework_extra.yaml"
+        ]
     },
     "symfony/cache": {
         "version": "v4.4.31"
@@ -35,6 +135,9 @@
     },
     "symfony/dependency-injection": {
         "version": "v4.4.31"
+    },
+    "symfony/deprecation-contracts": {
+        "version": "v2.4.0"
     },
     "symfony/dotenv": {
         "version": "v4.4.29"
@@ -96,6 +199,18 @@
     "symfony/http-kernel": {
         "version": "v4.4.32"
     },
+    "symfony/inflector": {
+        "version": "v4.4.27"
+    },
+    "symfony/maker-bundle": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "fadbfe33303a76e25cb63401050439aa9b1a9c7f"
+        }
+    },
     "symfony/mime": {
         "version": "v4.4.31"
     },
@@ -120,6 +235,9 @@
     "symfony/polyfill-php81": {
         "version": "v1.23.0"
     },
+    "symfony/property-info": {
+        "version": "v4.4.31"
+    },
     "symfony/routing": {
         "version": "4.2",
         "recipe": {
@@ -133,6 +251,9 @@
             "config/packages/routing.yaml",
             "config/routes.yaml"
         ]
+    },
+    "symfony/serializer": {
+        "version": "v4.4.31"
     },
     "symfony/service-contracts": {
         "version": "v2.4.0"

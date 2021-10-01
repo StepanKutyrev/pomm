@@ -6,6 +6,7 @@
 parameters:
 
 services:
+
     # default configuration for services in *this* file
     _defaults:
         autowire: true      # Automatically injects dependencies in your services.
@@ -25,7 +26,28 @@ services:
     # as action arguments even if you don't extend any base controller class
     App\Controller\:
         resource: '../src/Controller/'
+        autowire: true
         tags: ['controller.service_arguments']
+
+    App\Event\ParamConverterPosts:
+        tags:
+            - { name: request.param_converter, converter: post }
+        arguments:
+            - '@repo.posts'
+
+    App\Model\Db\PublicSchema\PostModel:
+        tags:
+            - { name: pomm.model, session: pomm.session.db }
+
+    repo.posts:
+        alias: 'App\Repository\PostRepository'
+        public: true
+
+    # Models
+    App\Entity\:
+        resource: '../src/Entity/'
+        autowire: true
+        public: true
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
